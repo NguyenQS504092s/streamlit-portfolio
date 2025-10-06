@@ -29,7 +29,7 @@ def get_base64_image(image_path):
 # --- PATHS ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGE_DIR = os.path.join(BASE_DIR, "images")
-CSS_PATH = r"E:\Github_Repos\My-portfolio\nextjs-portfolio\src\app\globals.css"
+CSS_PATH = "E:\\Github_Repos\\My-portfolio\\nextjs-portfolio\\src\\app\\globals.css"
 
 # --- INJECT CUSTOM CSS ---
 st.markdown(f"<style>{load_css(CSS_PATH)}</style>", unsafe_allow_html=True)
