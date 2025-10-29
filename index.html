@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio site for Nguyen Quang Sang – AI and machine learning engineer, data scientist, and researcher.">
+    <title>Portfolio | Nguyen Quang Sang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/globals.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a class="logo" href="#hero">NQS</a>
+            <ul class="nav-links">
+                <li><a href="#profile">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#datasets">Datasets</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a class="cta-button" href="mailto:sangquang2904@gmail.com">Let's Talk</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="title-badge">Computer Science, Major in AI</div>
+                    <h1>Nguyen Quang Sang</h1>
+                    <p>Passionate AI/ML engineer and data scientist designing practical machine learning, computer vision, and data platforms that deliver business impact.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#projects">View Work</a>
+                    <a class="btn btn-secondary" href="#contact">Collaborate</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="profile">
+            <div class="profile-container">
+                <aside class="profile-card">
+                    <div class="profile-picture-container">
+                        <img src="images/profile-picture.jpg" alt="Portrait of Nguyen Quang Sang" class="profile-picture">
+                        <span class="status-badge">Open to opportunities</span>
+                    </div>
+                    <h2>Nguyen Quang Sang</h2>
+                    <p class="profile-subtitle">AI/ML Engineer &amp; Data Scientist</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>5+</h3>
+                            <p>Production ML launches</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>15+</h3>
+                            <p>Datasets explored</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>8+</h3>
+                            <p>Research artifacts</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary connect-btn" href="https://linkedin.com/in/nguyễn-quang-sang-068784218" target="_blank" rel="noopener">Connect on LinkedIn</a>
+                </aside>
+
+                <div class="profile-details">
+                    <section class="about-section">
+                        <h3>About</h3>
+                        <p>I'm an AI/ML engineer and data scientist with a focus on transforming raw data into intelligent products. My work ranges from building real-time computer vision systems to designing end-to-end data science workflows that scale from prototype to production.</p>
+                    </section>
+
+                    <section class="skills-section" id="skills">
+                        <h3>Skills</h3>
+                        <div class="skills-category">
+                            <h4>AI / Machine Learning</h4>
+                            <p>Supervised &amp; unsupervised learning, regression and classification, model tuning and evaluation.</p>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Deep Learning</h4>
+                            <p>Neural networks, CNNs, RNNs, transfer learning, TensorFlow, PyTorch.</p>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Data Science</h4>
+                            <p>Data wrangling, exploratory data analysis, visualization with Pandas, NumPy, Matplotlib.</p>
+                        </div>
+                        <div class="skills-category">
+                            <h4>Computer Vision</h4>
+                            <p>Image classification, detection, segmentation with OpenCV, YOLO, custom pipelines.</p>
+                        </div>
+                        <div class="skills-category">
+                            <h4>DevOps &amp; MLOps</h4>
+                            <p>CI/CD, Docker, Kubernetes, cloud (AWS/GCP/Azure), model monitoring, MLflow, Kubeflow.</p>
+                        </div>
+                    </section>
+
+                    <section class="experience-section">
+                        <h3>Experience</h3>
+                        <ul>
+                            <li>Machine Learning Engineer – XYZ Corp (2026&nbsp;– Present)</li>
+                            <li>Data Scientist Intern – ABC Ltd (2020&nbsp;– 2021)</li>
+                        </ul>
+                    </section>
+
+                    <section class="experience-section">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>Bachelor in Artificial Intelligence – Computer Science, FPT University (2023&nbsp;– 2027)</li>
+                            <li>M.S. in Computer Science, Tech University (2027&nbsp;– 2029)</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="new-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Highlighted Projects</h2>
+                    <p>Recent work that blends applied machine learning with production-ready engineering.</p>
+                </div>
+                <div class="item-list">
+                    <article class="list-item">
+                        <h3>Real-time Object Detection</h3>
+                        <p>Deployed YOLOv5 on edge hardware for factory-floor monitoring with streaming video. Reduced false positives by 18% through custom data augmentation and on-device calibration.</p>
+                        <img src="images/project-1.png" alt="Dashboard of real-time object detection project" loading="lazy">
+                        <a class="item-link" href="https://github.com" target="_blank" rel="noopener">GitHub Repo</a>
+                    </article>
+                    <article class="list-item">
+                        <h3>Predictive Maintenance with IoT</h3>
+                        <p>Built time-series forecasting models on industrial sensor data to predict equipment failures. Integrated MQTT messaging for live alerts and a monitoring dashboard for operators.</p>
+                        <img src="images/project-2.png" alt="Predictive maintenance dashboard for IoT sensors" loading="lazy">
+                        <a class="item-link" href="https://github.com" target="_blank" rel="noopener">GitHub Repo</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="datasets" class="new-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Kaggle Datasets</h2>
+                    <p>Selected explorations and kernels demonstrating feature engineering, modeling, and storytelling.</p>
+                </div>
+                <div class="item-list">
+                    <article class="list-item">
+                        <h3>Titanic — Machine Learning from Disaster</h3>
+                        <p>Classic survival analysis with feature engineering, logistic regression, and ensemble modeling to optimize ROC-AUC.</p>
+                        <img src="images/kaggle1.png" alt="Visualization from Titanic dataset exploration" loading="lazy">
+                        <a class="item-link" href="https://www.kaggle.com/c/titanic" target="_blank" rel="noopener">View on Kaggle</a>
+                    </article>
+                    <article class="list-item">
+                        <h3>House Prices — Advanced Regression</h3>
+                        <p>Constructed stacking models using XGBoost and Lasso, uncovering neighborhood and quality signals that drive price predictions.</p>
+                        <img src="images/kaggle2.png" alt="Feature importance chart for house prices dataset" loading="lazy">
+                        <a class="item-link" href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques" target="_blank" rel="noopener">View on Kaggle</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="new-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Research &amp; Writing</h2>
+                    <p>Academic publications and long-form articles on machine learning systems.</p>
+                </div>
+                <div class="item-list">
+                    <article class="list-item">
+                        <h3>A Lightweight Deep Learning Framework for Real-Time Defect Detection</h3>
+                        <p>Presented at IEEE ICMLC 2023. Introduces a compact CNN optimizing inference on constrained hardware for surface anomaly detection.</p>
+                        <a class="item-link" href="https://ieeexplore.ieee.org/document/example123" target="_blank" rel="noopener">Read Publication</a>
+                    </article>
+                    <article class="list-item">
+                        <h3>Predicting Stock Prices using LSTM &amp; Attention</h3>
+                        <p>Blog post explaining a hybrid sequence modeling approach that applies attention to long-horizon financial data.</p>
+                        <a class="item-link" href="https://medium.com" target="_blank" rel="noopener">Read Article</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="new-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                    <p>Formal credentials backing hands-on experience with deep learning and applied ML.</p>
+                </div>
+                <div class="item-list">
+                    <article class="list-item">
+                        <h3>Deep Learning Specialization — Coursera</h3>
+                        <p>Comprehensive training in neural networks, sequence models, and ML strategies taught by Andrew Ng.</p>
+                        <a class="item-link" href="https://coursera.org/verify/certificate/example" target="_blank" rel="noopener">Verify Certificate</a>
+                    </article>
+                    <article class="list-item">
+                        <h3>TensorFlow Developer Certificate</h3>
+                        <p>Credentialed for building, training, and deploying TensorFlow models for production pipelines.</p>
+                        <a class="item-link" href="https://www.tensorflow.org/certificate/example" target="_blank" rel="noopener">Verify Certificate</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <div class="contact-left">
+                    <h2>Let's build something great</h2>
+                    <p>Interested in collaborations, speaking, or consulting? Reach out and I’ll respond within two business days.</p>
+                    <div class="contact-services">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h5>AI/ML Consulting</h5>
+                                <p>Model design, evaluation, and deployment workflows.</p>
+                            </div>
+                            <span class="price-badge">Project-based</span>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h5>Data Science Roadmaps</h5>
+                                <p>Data audits, experimentation plans, and analytics dashboards.</p>
+                            </div>
+                            <span class="price-badge">Flexible</span>
+                        </div>
+                    </div>
+                    <p><strong>Email:</strong> <a href="mailto:sangquang2904@gmail.com">sangquang2904@gmail.com</a></p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nguyễn-quang-sang-068784218" target="_blank" rel="noopener">linkedin.com/in/nguyễn-quang-sang-068784218</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/NguyenQS504092s" target="_blank" rel="noopener">github.com/NguyenQS504092s</a></p>
+                </div>
+                <div class="contact-right">
+                    <img src="images/project-1.png" alt="Collaboration concept illustration" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <a class="logo" href="#hero">NQS</a>
+                    <ul class="nav-links">
+                        <li><a href="#profile">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#datasets">Datasets</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-actions">
+                    <a class="btn btn-secondary" href="mailto:sangquang2904@gmail.com">Email me</a>
+                    <a class="btn btn-secondary" href="https://linkedin.com/in/nguyễn-quang-sang-068784218" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span id="year"></span> Nguyen Quang Sang. All rights reserved.</span>
+                <span>Built with HTML &amp; CSS, hosted on GitHub Pages.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const yearElement = document.getElementById('year');
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
+</body>
+</html>

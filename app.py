@@ -3,11 +3,12 @@ from PIL import Image
 import os
 import base64
 
+
 # --- PAGE CONFIG ---
 st.set_page_config(
     page_title="Portfolio | Nguyen Quang Sang",
     page_icon="✨",
-    layout="wide"
+    layout="centered"
 )
 
 # --- HELPER FUNCTIONS ---
@@ -88,26 +89,29 @@ if project1_b64:
 st.markdown("[🔗 GitHub Repo](https://github.com)")
 st.subheader("2. Predictive Maintenance with IoT")
 st.write("Built ML models using time-series data from industrial sensors to predict potential failures. Integrated with MQTT for real-time alerts and dashboard visualization.")
-st.markdown("[🔗 GitHub Repo](https://github.com)")
+
 project2_b64 = get_base64_image(os.path.join(IMAGE_DIR, "project-2.png"))
 if project2_b64:
     st.markdown(f'<img src="data:image/png;base64,{project2_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
+st.markdown("[🔗 GitHub Repo](https://github.com)")
 st.markdown("---")
 
 # --- Datasets ---
 st.header("📊 Datasets (Kaggle)")
+st.subheader("1. Titanic - Machine Learning from Disaster")
+st.write("Classic binary classification dataset. Explored survival prediction using logistic regression, decision trees, and ensemble models.")
 dataset1_b64 = get_base64_image(os.path.join(IMAGE_DIR, "kaggle1.png"))
 if dataset1_b64:
     st.markdown(f'<img src="data:image/png;base64,{dataset1_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
-st.subheader("1. Titanic - Machine Learning from Disaster")
-st.write("Classic binary classification dataset. Explored survival prediction using logistic regression, decision trees, and ensemble models.")
+
 st.markdown("[🔗 Kaggle Dataset](https://www.kaggle.com/c/titanic)")
 st.markdown("---")
 st.subheader("2. House Prices - Advanced Regression Techniques")
+st.write("Used feature engineering and ensemble regressors (XGBoost, Lasso) to predict house prices from rich tabular data.")
+
 dataset2_b64 = get_base64_image(os.path.join(IMAGE_DIR, "kaggle2.png"))
 if dataset2_b64:
     st.markdown(f'<img src="data:image/png;base64,{dataset2_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
-st.write("Used feature engineering and ensemble regressors (XGBoost, Lasso) to predict house prices from rich tabular data.")
 st.markdown("[🔗 Kaggle Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques)")
 
 # --- RESEARCH & PUBLICATIONS ---
@@ -120,10 +124,11 @@ if paper1_b64:
 st.markdown("[🔗 Publication Link](https://ieeexplore.ieee.org/document/example123)")
 st.subheader("2. Blog: Predicting Stock Prices using LSTM & Attention")
 st.write("Technical blog post explaining how to combine LSTM and attention mechanisms for forecasting financial time series.")
-st.markdown("[🔗 Read Blog](https://medium.com)")
+
 paper2_b64 = get_base64_image(os.path.join(IMAGE_DIR, "paper2.png"))
 if paper2_b64:
     st.markdown(f'<img src="data:image/png;base64,{paper2_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
+st.markdown("[🔗 Read Blog](https://medium.com)")
 
 st.markdown("---")
 
@@ -135,10 +140,11 @@ if cert_dl_b64:
     st.markdown(f'<img src="data:image/png;base64,{cert_dl_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
 st.markdown("[Verify Certificate](https://coursera.org/verify/certificate/example)")
 st.subheader("TensorFlow Developer Certificate")
-st.markdown("[Verify Certificate](https://www.tensorflow.org/certificate/example)")
+
 cert_tf_b64 = get_base64_image(os.path.join(IMAGE_DIR, "certificate_tf.png"))
 if cert_tf_b64:
     st.markdown(f'<img src="data:image/png;base64,{cert_tf_b64}" style="width: 100%; border-radius: 8px; margin-top: 15px;" />', unsafe_allow_html=True)
+st.markdown("[Verify Certificate](https://www.tensorflow.org/certificate/example)")
 
 st.markdown("---")
 

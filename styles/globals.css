@@ -623,6 +623,25 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.list-item img {
+    width: 100%;
+    border-radius: 16px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.footer-actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.footer-actions .btn {
+    min-width: 140px;
+    text-align: center;
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .profile-container, .testimonials-container, .contact-container, .footer-container {
